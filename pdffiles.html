@@ -3,25 +3,75 @@
 
 <head>
   <style>
-    /* Make image and content align vertically in the middle */
-#about .row {
-  display: flex;
-  align-items: center; /* vertical centering */
+    /*logo container same size*/
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* space between items */
+    justify-content: center;
+  }
+
+  .portfolio-item {
+    flex: 0 0 calc(33.333% - 20px); /* 3 per row */
+    max-width: calc(33.333% - 20px);
+    text-align: center;
+  }
+
+  .portfolio-item a {
+    display: block;
+    width: 100%;
+    height: 180px; /* fixed height for symmetry */
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* keeps aspect ratio without cropping */
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .portfolio-item h5 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+    .portfolio-item {
+      flex: 0 0 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .portfolio-item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /*portfolio container hover effect- subtle shadow,scale up*/
+
+.portfolio-item:hover h5 {
+  color: #ff7f50; /* changes color on hover */
+}
+.portfolio-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#about .col-lg-6 img {
-  width: 100%;
-  height: auto;
-  object-fit: cover; /* Keeps proportions but fills space */
-  border-radius: 8px; /* Optional rounded corners */
+.portfolio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
-/* Optional: Equal padding for better symmetry */
-#about .content {
-  padding: 20px;
-}
-
-  </style>
+</style>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -46,6 +96,151 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+     <style>
+          .section-title {
+            text-align: center;
+            padding: 20px 0 10px;
+          }
+
+          /* Gradient heading */
+          .section-title h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            background: linear-gradient(to right, #ff7f50, #ffb347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 15px;
+          }
+
+          /* Decorative underline */
+          .section-title h2::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #ff7f50, #ffb347);
+            margin: 8px auto 0;
+            border-radius: 3px;
+          }
+
+          .section-title p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 5px auto;
+            text-align: justify;
+          }
+
+          /* Smooth fade-in effect */
+          .section-title {
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeInUp 0.7s ease forwards;
+          }
+
+          @keyframes fadeInUp {
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+
+          /*logo container same size*/
+          .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            /* space between items */
+            justify-content: center;
+          }
+
+          .portfolio-item {
+            flex: 0 0 calc(33.333% - 20px);
+            /* 3 per row */
+            max-width: calc(33.333% - 20px);
+            text-align: center;
+          }
+
+          .portfolio-item a {
+            display: block;
+            width: 100%;
+            height: 180px;
+            /* fixed height for symmetry */
+            overflow: hidden;
+            border-radius: 8px;
+          }
+
+          .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* keeps aspect ratio without cropping */
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+          }
+
+          .portfolio-item h5 {
+            margin-top: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #333;
+          }
+
+          /* Responsive for smaller screens */
+          @media (max-width: 768px) {
+            .portfolio-item {
+              flex: 0 0 calc(50% - 20px);
+              max-width: calc(50% - 20px);
+            }
+          }
+
+          @media (max-width: 480px) {
+            .portfolio-item {
+              flex: 0 0 100%;
+              max-width: 100%;
+            }
+          }
+
+          
+
+        /* portfolio hover effect*/
+
+          .portfolio-item h5 {
+            margin-top: 10px;
+            font-size: 1.25rem;
+            /* slightly bigger than default */
+            font-weight: 700;
+            /* bold */
+            color: #333;
+            /* dark gray for readability */
+            letter-spacing: 0.5px;
+            /* small spacing for elegance */
+            transition: color 0.3s ease;
+          }
+
+          /*portfolio container hover effect- subtle shadow,scale up*/
+
+          .portfolio-item:hover h5 {
+            color: #ff7f50;
+            /* changes color on hover */
+          }
+
+          .portfolio-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+
+          .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+          }
+          </style>
 
   
 </head>
@@ -80,10 +275,11 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="aboutus.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li class="active"><a href="products.html">Products</a></li>
           <li><a href="Contactus.html">Contact</a></li>
-    </ul>
+
+        </ul>
       </nav><!-- .nav-menu -->
 
     </div>
@@ -95,92 +291,29 @@
 
     
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about section-bg" style="margin-top: 100px;">
+    <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About Us</h2>
-          </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-            <p><strong>UNITED TRANSMISSION</strong> started in 2007 as a partnership firm for the trading power transmission products. Their operation and activities at a glance are</p>
-          <p >Our Chief Director <strong>Mr. Upnish Raval</strong> has a 25 years’ experience in the field of sales marketing with the B.E. Mechanical background, P.G. in Diploma in Business Administration, P.G. Diploma in Marketing Management and had an experience of the same field since last 11years with Indian and Italian MNC.</p>
-          <p>
-           <h4 class="clients-title">Our Clients</h4>
-
-          </p>
-          <ol>
-            <li>Amul Group - Anand</li>
- <li>Radicon PowerBuild - Anand</li>
- <li>Revomac Industries - Ahmedabad</li>
- <li>Navrang Machinery - Ahmedabad</li>
- <li>Rabatex Industries - Ahmedabad</li>
- <li>Premium Pulman - Ahmedabad</li>
- <li>J.P. Industries – Ankleswar</li>
- <li>Pelican Rotoflex – Rajkot</li>
- <li>Bifriendsengg – Mumbai</li>
- <li>Oswal Machinery Limited - Anand</li>
- <li>PrashantGamatex group- Ahmedabad</li>
- <li>Mundra International Container Terminal Pvt. Ltd. - Kutch</li>
- <li>Adani Ports & Special Economic Zone Ltd – Kutch </li>
-          </ol>
-        <!--     <p>EURO GEARS are specialized in production of various reduction gears with the edge of research and development in transmission technology. The on going process of research and development has made it possible to introduce advance technology and continuous development to meet marker requirements.</p>
-<p>EURO GEARS aluminum alloy housing Gearbox are totally dust proof and oil tight with attractive esthetical look due to silver grey shed protects housing from oxidation. The greater, longer cooling fins in all 6 faces having maximum surface area exposes to atmosphere for improved efficiency and more capability of heat dissipation which is ideal for hot ambient temperature conditions.</p>
-<p>Due to robust & compact construction, easy interchangeability of input with standard fasteners', matching surface are perpendicular machined suitable to serve in all operating condition of almost every industries by means of right selection.</p> -->
-<!-- <p>The permissible overhung and shock loads achieved by perfect alignment of accurately bored bearing housing for ball and taper roller bearing for worm and worm shaft.</p> -->
-<!-- <p>Case carburized, grounded alloy steel worm shaft ensure a positive oil film and the perfectly hobbed centrifugally casted phosphorus bronze worm wheel assures superior eddiciency and low noise.</p> -->
-          </div>
+          <h2>PdF Files</h2>
+          
         </div>
 
-      </div>
-    </section><!-- End About Section -->
+
+        <div class="row portfolio-container mt-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web text-center">
+            <a href="./assets/pdf/RV040-63B5.pdf"> <img src="assets/img/portfolio/client-2.png" class="img-fluid img-thumbnail" alt="" /></a>
+          <h5 class="text-center">123</h5>
+          </div>      
 
     
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="row">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/amul-logo.jpeg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/radicon-pbl-logo.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/revomac-logo.jpeg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/4.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/Rabatex-Logo.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/6.jpg" class="img-fluid" alt="">
-          </div>
-          <!-- <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/7.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/8.png" class="img-fluid" alt="">
-          </div> -->
-        
-
         </div>
 
       </div>
     </section>
-    <!-- End Clients Section -->
+
+    
+
 
    
 
