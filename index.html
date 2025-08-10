@@ -31,150 +31,151 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
 
-        <style>
-          .section-title {
-            text-align: center;
-            padding: 20px 0 10px;
-          }
+  <style>
+    .section-title {
+      text-align: center;
+      padding: 20px 0 10px;
+    }
 
-          /* Gradient heading */
-          .section-title h2 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            background: linear-gradient(to right, #ff7f50, #ffb347);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            position: relative;
-            display: inline-block;
-            margin-bottom: 15px;
-          }
+    /* Gradient heading */
+    .section-title h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #ff7f50, #ffb347);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
 
-          /* Decorative underline */
-          .section-title h2::after {
-            content: "";
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(to right, #ff7f50, #ffb347);
-            margin: 8px auto 0;
-            border-radius: 3px;
-          }
+    /* Decorative underline */
+    .section-title h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(to right, #ff7f50, #ffb347);
+      margin: 8px auto 0;
+      border-radius: 3px;
 
-          .section-title p {
-            color: #555;
-            font-size: 1rem;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 5px auto;
-            text-align: justify;
-          }
+    }
 
-          /* Smooth fade-in effect */
-          .section-title {
-            opacity: 0;
-            transform: translateY(10px);
-            animation: fadeInUp 0.7s ease forwards;
-          }
+    .section-title p {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 5px auto;
+      text-align: justify;
+    }
 
-          @keyframes fadeInUp {
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
+    /* Smooth fade-in effect */
+    .section-title {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeInUp 0.7s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
 
-          /*logo container same size*/
-          .portfolio-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            /* space between items */
-            justify-content: center;
-          }
+    /*logo container same size*/
+    .portfolio-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      /* space between items */
+      justify-content: center;
+    }
 
-          .portfolio-item {
-            flex: 0 0 calc(33.333% - 20px);
-            /* 3 per row */
-            max-width: calc(33.333% - 20px);
-            text-align: center;
-          }
+    .portfolio-item {
+      flex: 0 0 calc(33.333% - 20px);
+      /* 3 per row */
+      max-width: calc(33.333% - 20px);
+      text-align: center;
+    }
 
-          .portfolio-item a {
-            display: block;
-            width: 100%;
-            height: 180px;
-            /* fixed height for symmetry */
-            overflow: hidden;
-            border-radius: 8px;
-          }
+    .portfolio-item a {
+      display: block;
+      width: 100%;
+      height: 180px;
+      /* fixed height for symmetry */
+      overflow: hidden;
+      border-radius: 8px;
+    }
 
-          .portfolio-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            /* keeps aspect ratio without cropping */
-            background: #fff;
-            border: 1px solid #ddd;
-            padding: 10px;
-          }
+    .portfolio-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      /* keeps aspect ratio without cropping */
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
 
-          .portfolio-item h5 {
-            margin-top: 10px;
-            font-size: 1rem;
-            font-weight: 600;
-            color: #333;
-          }
+    .portfolio-item h5 {
+      margin-top: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #333;
+    }
 
-          /* Responsive for smaller screens */
-          @media (max-width: 768px) {
-            .portfolio-item {
-              flex: 0 0 calc(50% - 20px);
-              max-width: calc(50% - 20px);
-            }
-          }
+    /* Responsive for smaller screens */
+    @media (max-width: 768px) {
+      .portfolio-item {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
 
-          @media (max-width: 480px) {
-            .portfolio-item {
-              flex: 0 0 100%;
-              max-width: 100%;
-            }
-          }
+    @media (max-width: 480px) {
+      .portfolio-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
 
-          
 
-        /* portfolio hover effect*/
 
-          .portfolio-item h5 {
-            margin-top: 10px;
-            font-size: 1.25rem;
-            /* slightly bigger than default */
-            font-weight: 700;
-            /* bold */
-            color: #333;
-            /* dark gray for readability */
-            letter-spacing: 0.5px;
-            /* small spacing for elegance */
-            transition: color 0.3s ease;
-          }
+    /* portfolio hover effect*/
 
-          /*portfolio container hover effect- subtle shadow,scale up*/
+    .portfolio-item h5 {
+      margin-top: 10px;
+      font-size: 1.25rem;
+      /* slightly bigger than default */
+      font-weight: 700;
+      /* bold */
+      color: #333;
+      /* dark gray for readability */
+      letter-spacing: 0.5px;
+      /* small spacing for elegance */
+      transition: color 0.3s ease;
+    }
 
-          .portfolio-item:hover h5 {
-            color: #ff7f50;
-            /* changes color on hover */
-          }
+    /*portfolio container hover effect- subtle shadow,scale up*/
 
-          .portfolio-item {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-          }
+    .portfolio-item:hover h5 {
+      color: #ff7f50;
+      /* changes color on hover */
+    }
 
-          .portfolio-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-          }
-          </style>
+    .portfolio-item {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
@@ -280,7 +281,7 @@
 
         <!--here comes the style of about section-->
 
-        
+
 
         <div class="section-title">
           <h2>About Us</h2>
