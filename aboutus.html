@@ -21,6 +21,38 @@
   padding: 20px;
 }
 
+/*List number color*/
+  .client-list li::marker {
+    color: #ff7f50;
+    font-weight: bold;
+
+  }
+
+  .client-list {
+    text-align: left;         /* Aligns the whole list to the left */
+    font-size: 17px;
+    columns: 2;
+    column-gap: 50px;
+    padding-left: 20px;
+  }
+
+  .client-list li::marker {
+    color: #f7f50;
+    font-weight: bold;
+  }
+
+  .client-list li {
+    text-align: left;         /* Ensures each item aligns left within its column */
+  }
+
+  .clients-title {
+    margin-bottom: 25px; /* Adjust this value as needed */
+  }
+
+
+
+
+
   </style>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -95,62 +127,59 @@
 
     
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about section-bg" style="margin-top: 50px;">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About Us</h2>
-          </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-            <p><strong>UNITED TRANSMISSION</strong> started in 2007 as a partnership firm for the trading power transmission products. Their operation and activities at a glance are</p>
-          <p >Our Chief Director <strong>Mr. Upnish Raval</strong> has a 30 years’ experience in the field of sales marketing with the B.E. Mechanical background, P.G. in Diploma in Business Administration, P.G. Diploma in Marketing Management and had an experience of the same field since last 11years with Indian and Italian MNC.</p>
-          <p>
-           <h4 class="clients-title">Our Clients</h4>
-
-          </p>
-          <ol>
-            <li>Amul Group - Anand</li>
- <li>Radicon PowerBuild - Anand</li>
- <li>Revomac Industries - Ahmedabad</li>
- <li>Navrang Machinery - Ahmedabad</li>
- <li>Rabatex Industries - Ahmedabad</li>
- <li>Premium Pulman - Ahmedabad</li>
- <li>J.P. Industries – Ankleswar</li>
- <li>Pelican Rotoflex – Rajkot</li>
- <li>BEW engineering Ltd. – Mumbai</li>
- <li>Oswal Machinery Limited - Anand</li>
- <li>PrashantGamatex group - Ahmedabad</li>
- <li>Nilkanth Engineering Works - Ahmedabad</li>
- <li>JayKrishna Engineering - Ahmedabad</li>
- <li>Plast World - Ahmedabad</li>
- <li>Vardhman Engineering - Rajkot</li>
- <li>Safex Energy Pvt. Ltd. - Ahmedabad</li>
- <li>Kirtiraj & Co. - Anand</li>
- <li>Safex Engineers Pvt. Ltd. - Ahmedabad</li>
- <li>Cybernetics Technologies Pvt. Ltd. - Pune</li>
-          </ol>
-        <!--     <p>EURO GEARS are specialized in production of various reduction gears with the edge of research and development in transmission technology. The on going process of research and development has made it possible to introduce advance technology and continuous development to meet marker requirements.</p>
-<p>EURO GEARS aluminum alloy housing Gearbox are totally dust proof and oil tight with attractive esthetical look due to silver grey shed protects housing from oxidation. The greater, longer cooling fins in all 6 faces having maximum surface area exposes to atmosphere for improved efficiency and more capability of heat dissipation which is ideal for hot ambient temperature conditions.</p>
-<p>Due to robust & compact construction, easy interchangeability of input with standard fasteners', matching surface are perpendicular machined suitable to serve in all operating condition of almost every industries by means of right selection.</p> -->
-<!-- <p>The permissible overhung and shock loads achieved by perfect alignment of accurately bored bearing housing for ball and taper roller bearing for worm and worm shaft.</p> -->
-<!-- <p>Case carburized, grounded alloy steel worm shaft ensure a positive oil film and the perfectly hobbed centrifugally casted phosphorus bronze worm wheel assures superior eddiciency and low noise.</p> -->
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
+   
+<!-------------2ND OPTION ------------->
   
+<section>
+  <div class="container">
+    <!-- Flex Row for Image and Introduction -->
+    <div class="row align-items-stretch" style="min-height: 100%;">
+      <!-- Image Column -->
+      <div class="col-lg-6 d-flex align-items-stretch" data-aos="zoom-out" data-aos-delay="100">
+        <div class="w-90" style="background: #f9f9f9; border-radius: 8px; overflow: hidden;">
+          <img src="assets/img/about.jpg" class="img-fluid h-40 w-90" alt="About Us Image" style="object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Content Column -->
+      <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="content d-flex flex-column justify-content-center p-3 w-100">
+          <p><strong>UNITED TRANSMISSION</strong> started in 2007 as a partnership firm for trading power transmission products. Below is a snapshot of our operations and activities.</p>
+          <p>Our Chief Director, <strong>Mr. Upnish Raval</strong>, brings 30 years of experience in sales and marketing, supported by a B.E. in Mechanical Engineering, a Postgraduate Diploma in Business Administration, and a Postgraduate Diploma in Marketing Management. He has worked with Indian and Italian MNCs in the same field for over 11 years.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clients List Section -->
+    <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="150">
+      <h4 class="clients-title">Our Clients</h4>
+      <ol class="client-list d-inline-block text-start" style="font-size: 17px; columns: 2; -webkit-columns: 2; -moz-columns: 2; column-gap: 50px; padding-left: 20px;">
+        <li>Amul Group - Anand</li>
+        <li>Radicon PowerBuild - Anand</li>
+        <li>Revomac Industries - Ahmedabad</li>
+        <li>Navrang Machinery - Ahmedabad</li>
+        <li>Rabatex Industries - Ahmedabad</li>
+        <li>Premium Pulman - Ahmedabad</li>
+        <li>J.P. Industries – Ankleswar</li>
+        <li>Pelican Rotoflex – Rajkot</li>
+        <li>BEW Engineering Ltd. – Mumbai</li>
+        <li>Oswal Machinery Limited - Anand</li>
+        <li>PrashantGamatex Group - Ahmedabad</li>
+        <li>Nilkanth Engineering Works - Ahmedabad</li>
+        <li>JayKrishna Engineering - Ahmedabad</li>
+        <li>Plast World - Ahmedabad</li>
+        <li>Safex Energy Pvt. Ltd. - Ahmedabad</li>
+        <li>Kirtiraj & Co. - Anand</li>
+        <li>Safex Engineers Pvt. Ltd. - Ahmedabad</li>
+        <li>Cybernetics Technologies Pvt. Ltd. - Pune</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!--END 2ND OPTION-->
 
 
-
-
-    
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients section-bg">
       <div class="container" data-aos="zoom-in">
