@@ -4,74 +4,79 @@
 <head>
   <style>
     /*logo container same size*/
-  .portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* space between items */
-    justify-content: center;
-  }
-
-  .portfolio-item {
-    flex: 0 0 calc(33.333% - 20px); /* 3 per row */
-    max-width: calc(33.333% - 20px);
-    text-align: center;
-  }
-
-  .portfolio-item a {
-    display: block;
-    width: 100%;
-    height: 180px; /* fixed height for symmetry */
-    overflow: hidden;
-    border-radius: 8px;
-  }
-
-  .portfolio-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* keeps aspect ratio without cropping */
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-  }
-
-  .portfolio-item h5 {
-    margin-top: 10px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #333;
-  }
-
-  /* Responsive for smaller screens */
-  @media (max-width: 768px) {
-    .portfolio-item {
-      flex: 0 0 calc(50% - 20px);
-      max-width: calc(50% - 20px);
+    .portfolio-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      /* space between items */
+      justify-content: center;
     }
-  }
 
-  @media (max-width: 480px) {
     .portfolio-item {
-      flex: 0 0 100%;
-      max-width: 100%;
+      flex: 0 0 calc(33.333% - 20px);
+      /* 3 per row */
+      max-width: calc(33.333% - 20px);
+      text-align: center;
     }
-  }
-  
-  /*portfolio container hover effect- subtle shadow,scale up*/
 
-.portfolio-item:hover h5 {
-  color: #ff7f50; /* changes color on hover */
-}
-.portfolio-item {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    .portfolio-item a {
+      display: block;
+      width: 100%;
+      height: 180px;
+      /* fixed height for symmetry */
+      overflow: hidden;
+      border-radius: 8px;
+    }
 
-.portfolio-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
+    .portfolio-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      /* keeps aspect ratio without cropping */
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
 
-</style>
+    .portfolio-item h5 {
+      margin-top: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    /* Responsive for smaller screens */
+    @media (max-width: 768px) {
+      .portfolio-item {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .portfolio-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    /*portfolio container hover effect- subtle shadow,scale up*/
+
+    .portfolio-item:hover h5 {
+      color: #ff7f50;
+      /* changes color on hover */
+    }
+
+    .portfolio-item {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  </style>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -84,7 +89,9 @@
   <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fontsoogleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fontsoogleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -97,153 +104,153 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-     <style>
-          .section-title {
-            margin-top: 10px;
-            text-align: center;
-            padding: 20px 0 10px;
-          }
+  <style>
+    .section-title {
+      margin-top: 10px;
+      text-align: center;
+      padding: 20px 0 10px;
+    }
 
-          /* Gradient heading */
-          .section-title h2 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            background: linear-gradient(to right, #ff7f50, #ffb347);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            position: relative;
-            display: inline-block;
-            margin-bottom: 15px;
-          }
+    /* Gradient heading */
+    .section-title h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #ff7f50, #ffb347);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
 
-          /* Decorative underline */
-          .section-title h2::after {
-            content: "";
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(to right, #ff7f50, #ffb347);
-            margin: 8px auto 0;
-            border-radius: 3px;
-          }
+    /* Decorative underline */
+    .section-title h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(to right, #ff7f50, #ffb347);
+      margin: 8px auto 0;
+      border-radius: 3px;
+    }
 
-          .section-title p {
-            color: #555;
-            font-size: 1rem;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 5px auto;
-            text-align: justify;
-          }
+    .section-title p {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 5px auto;
+      text-align: justify;
+    }
 
-          /* Smooth fade-in effect */
-          .section-title {
-            opacity: 0;
-            transform: translateY(10px);
-            animation: fadeInUp 0.7s ease forwards;
-          }
+    /* Smooth fade-in effect */
+    .section-title {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeInUp 0.7s ease forwards;
+    }
 
-          @keyframes fadeInUp {
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
 
-          /*logo container same size*/
-          .portfolio-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            /* space between items */
-            justify-content: center;
-          }
+    /*logo container same size*/
+    .portfolio-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      /* space between items */
+      justify-content: center;
+    }
 
-          .portfolio-item {
-            flex: 0 0 calc(33.333% - 20px);
-            /* 3 per row */
-            max-width: calc(33.333% - 20px);
-            text-align: center;
-          }
+    .portfolio-item {
+      flex: 0 0 calc(33.333% - 20px);
+      /* 3 per row */
+      max-width: calc(33.333% - 20px);
+      text-align: center;
+    }
 
-          .portfolio-item a {
-            display: block;
-            width: 100%;
-            height: 180px;
-            /* fixed height for symmetry */
-            overflow: hidden;
-            border-radius: 8px;
-          }
+    .portfolio-item a {
+      display: block;
+      width: 100%;
+      height: 180px;
+      /* fixed height for symmetry */
+      overflow: hidden;
+      border-radius: 8px;
+    }
 
-          .portfolio-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            /* keeps aspect ratio without cropping */
-            background: #fff;
-            border: 1px solid #ddd;
-            padding: 10px;
-          }
+    .portfolio-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      /* keeps aspect ratio without cropping */
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
 
-          .portfolio-item h5 {
-            margin-top: 10px;
-            font-size: 1rem;
-            font-weight: 600;
-            color: #333;
-          }
+    .portfolio-item h5 {
+      margin-top: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #333;
+    }
 
-          /* Responsive for smaller screens */
-          @media (max-width: 768px) {
-            .portfolio-item {
-              flex: 0 0 calc(50% - 20px);
-              max-width: calc(50% - 20px);
-            }
-          }
+    /* Responsive for smaller screens */
+    @media (max-width: 768px) {
+      .portfolio-item {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
 
-          @media (max-width: 480px) {
-            .portfolio-item {
-              flex: 0 0 100%;
-              max-width: 100%;
-            }
-          }
+    @media (max-width: 480px) {
+      .portfolio-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
 
-          
 
-        /* portfolio hover effect*/
 
-          .portfolio-item h5 {
-            margin-top: 10px;
-            font-size: 1.25rem;
-            /* slightly bigger than default */
-            font-weight: 700;
-            /* bold */
-            color: #333;
-            /* dark gray for readability */
-            letter-spacing: 0.5px;
-            /* small spacing for elegance */
-            transition: color 0.3s ease;
-          }
+    /* portfolio hover effect*/
 
-          /*portfolio container hover effect- subtle shadow,scale up*/
+    .portfolio-item h5 {
+      margin-top: 10px;
+      font-size: 1.25rem;
+      /* slightly bigger than default */
+      font-weight: 700;
+      /* bold */
+      color: #333;
+      /* dark gray for readability */
+      letter-spacing: 0.5px;
+      /* small spacing for elegance */
+      transition: color 0.3s ease;
+    }
 
-          .portfolio-item:hover h5 {
-            color: #ff7f50;
-            /* changes color on hover */
-          }
+    /*portfolio container hover effect- subtle shadow,scale up*/
 
-          .portfolio-item {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-          }
+    .portfolio-item:hover h5 {
+      color: #ff7f50;
+      /* changes color on hover */
+    }
 
-          .portfolio-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-          }
-          </style>
+    .portfolio-item {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-  
+    .portfolio-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  </style>
+
+
 </head>
 
 <body>
@@ -287,123 +294,186 @@
   </header><!-- End Header -->
 
 
-<main id="main">
+  <main id="main">
 
-    
-<!---Drawing Section--->
 
-<!-- ======= PDF Files ======= -->
-<section id="pdf-files" class="drawing py-4">
-  <div class="container" data-aos="fade-up">
-    <div class="section-title">
-      <h2>Worm Files</h2>
-    </div>
-    <div class="list-group">
-      <a href="./assets/pdf/EG040-63B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG040-63B5</a>
-      <a href="./assets/pdf/EG063-90B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG063-90B5</a>
-      <a href="./assets/pdf/EG090-100B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG090-100B5</a>
-      <a href="./assets/pdf/EG110-112B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG110-112B5</a>
-      <a href="./assets/pdf/EG130-132B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG130-132B5</a>
-      <a href="./assets/pdf/EG150-132B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG150-132B5</a>
-      <a href="./assets/pdf/EG30-63B14.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG30-63B14</a>
-      <a href="./assets/pdf/EG40-71B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG40-71B5</a>
-      <a href="./assets/pdf/EG50-80B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG50-80B5</a>
-      <a href="./assets/pdf/EG75-90B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG75-90B5</a>
-      <a href="./assets/pdf/EG130-20.dwg" class="list-group-item list-group-item-action" target="_blank">📄 EG130-20.dwg</a>
-    </div>
-  </div>
-</section>
+    <!---Drawing Section--->
 
-<!-- ======= EURO Planetary Drawings ======= -->
-<section id="euro-planetary" class="drawing py-4">
-  <div class="container" data-aos="fade-up">
-    <div class="section-title">
-      <h2>EURO Planetary Drawings</h2>
-    </div>
-    <div class="list-group">
-      <a href="./assets/EURO plenetary GEARBOX DRAWING/1、EG03L2-44.6-HC-AM132-A.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG03L2-44.6-HC-AM132-A</a>
-      <a href="./assets/EURO plenetary GEARBOX DRAWING/2、EG07L2-46.7-HC-AM160-A.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG07L2-46.7-HC-AM132-A</a>
-      <a href="./assets/EURO plenetary GEARBOX DRAWING/3、EG07L3-60.5-HC-AM160-A.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG07L3-60.5-HC-AM160-A</a>
-      <a href="./assets/EURO plenetary GEARBOX DRAWING/4、EGT07L3-73.9-HC-AM180-A.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EGT07L3-73.9-HC-AM180-A</a>
-      <a href="./assets/EURO plenetary GEARBOX DRAWING/5、EGT07L3-62.6-HC-AM180-A.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EGT07L3-62.6-HC-AM180-A</a>
-      <a href="./assets/EURO plenetary GEARBOX DRAWING/6、EGT09L3-73.9-HC-AM200-A.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EGT09L3-73.9-HC-AM200-A</a>
-      <a href="./assets/EURO plenetary GEARBOX DRAWING/7、EG05L3-63.1-HC-AM132-A.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG05L3-63.1-HC-AM132-A</a>
-      <a href="./assets/EURO plenetary GEARBOX DRAWING/8、EG03L3-53.4-HC-AM112-A.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG03L3-53.4-HC-AM112-A</a>
-      <a href="./assets/EURO plenetary GEARBOX DRAWING/EG710 TSF R 60.5 P160.pdf" class="list-group-item list-group-item-action" target="_blank">📄 EG0710 TSF R 60.5 P160-A</a>
-    </div>
-  </div>
-</section>
-
-<!-- =======  F-K Series Drawings======= -->
-  
-<section id="fk-series" class="drawing py-4">
-    <div class="container" data-aos="fade-up">
-      <div class="section-title">
-        <h2>F-K Series Drawings</h2>
+    <!-- ======= PDF Files ======= -->
+    <section id="pdf-files" class="drawing py-4">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Worm Files</h2>
+        </div>
+        <div class="list-group">
+          <a href="./assets/pdf/EG040-63B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄
+            EG040-63B5</a>
+          <a href="./assets/pdf/EG063-90B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄
+            EG063-90B5</a>
+          <a href="./assets/pdf/EG090-100B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄
+            EG090-100B5</a>
+          <a href="./assets/pdf/EG110-112B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄
+            EG110-112B5</a>
+          <a href="./assets/pdf/EG130-132B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄
+            EG130-132B5</a>
+          <a href="./assets/pdf/EG150-132B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄
+            EG150-132B5</a>
+          <a href="./assets/pdf/EG30-63B14.pdf" class="list-group-item list-group-item-action" target="_blank">📄
+            EG30-63B14</a>
+          <a href="./assets/pdf/EG40-71B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄
+            EG40-71B5</a>
+          <a href="./assets/pdf/EG50-80B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄
+            EG50-80B5</a>
+          <a href="./assets/pdf/EG75-90B5.pdf" class="list-group-item list-group-item-action" target="_blank">📄
+            EG75-90B5</a>
+          <a href="./assets/pdf/EG130-20.dwg" class="list-group-item list-group-item-action" target="_blank">📄
+            EG130-20.dwg</a>
+        </div>
       </div>
-    <div class="list-group">
-      <a href="./assets/f k series/EGCI -2016WXRJ0710.pdf -2016WXRJ0710.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGCI -2016WXRJ0710.pdf</a>
-      <a href="./assets/f k series/EGFAF47-AM80-42.86-M1.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGFAF47-AM80-42.86-M1.pdf</a>
-      <a href="./assets/f k series/EGFAF57-AM100-21.17-M1_2D-Drawing.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGFAF57-AM100-21.17-M1_2D-Drawing.pdf</a>
-      <a href="./assets/f k series/EGFF77-AM90-142.27-M1_Order Form.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGFF77-AM90-142.27-M1_Order FormD-Drawing.pdf</a>
-      <a href="./assets/f k series/EGFF87-AM100-197.2-M1_Order Form.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGFF87-AM100-197.2-M1_Order Form.pdf</a>
-      <a href="./assets/f k series/EGKF127-AD7-31.41-M6-B_2D-Drawing.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGKF127-AD7-31.41-M6-B_2D-Drawing.pdf</a>
-      <a href="./assets/f k series/EGKA47WR37-552-φ30-71B5(WMJ25031901).pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGKA47WR37-552-φ30-71B5(WMJ25031901).pdf</a>
-      <a href="./assets/f k series/EGKAB107WR77-AM100-286-M1_2D-Drawing.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGKAB107WR77-AM100-286-M1_2D-Drawing.pdf</a>
-      <a href="./assets/f k series/EGKFS107-31.28-M5(WMJ24100801).pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGKFS107-31.28-M5(WMJ24100801).pdf</a>
-      <a href="./assets/f k series/EGKFS127-31.41-SRφ60(法兰A面，输出轴B面，使用短轴)(WMJ25030402).pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGKFS127-31.41-SRφ60(法兰A面，输出轴B面，使用短轴)(WMJ25030402).pdf</a>
-      <a href="./assets/f k series/EGKAB37-AM100-13.08-M1_Order Form.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGKAB37-AM100-13.08-M1_Order Form.pdf</a>
-      <a href="./assets/f k series/EGKAB47WR37-552-71B5.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGAB47WR37-552-71B5.pdf</a>
-      <a href="./assets/f k series/EGKAT107-AM132ML-121.46-M1-A_2D-Drawing.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGKAT107-AM132ML-121.46-M1-A_2D-Drawing.pdf</a>
-      <a href="./assets/f k series/EGKAB127-82.11-132B5 1.dwg" class="list-group-item list-group-item-action"target="_blank">📄 EGKAB127-82.11-132B5 1.pdf</a>
-      <a href="./assets/f k series/EGKFS107-31.28-M5(WMJ24100801).dwg" class="list-group-item list-group-item-action"target="_blank">📄 EGKFS107-31.28-M5(WMJ24100801).pdf</a>
-      <a href="./assets/f k series/EGFAF57-100B5.dwg" class="list-group-item list-group-item-action"target="_blank">📄 EGFAF57-100B5.dwg</a>
-      <a href="./assets/f k series/EGKAB127-AM132ML-82.11-M1_3D-CAD.step" class="list-group-item list-group-item-action"target="_blank">📄 EGKAB127-AM132ML-82.11-M1_3D-CAD.step</a>
+    </section>
 
-    </div>
-  </div>
-</section>
-<!-- =======  Xingda Xeed Drawings======= -->
-  
-<section id="xingda-xeed" class="drawing py-4">
-    <div class="container" data-aos="fade-up">
-      <div class="section-title">
-        <h2>Xingda Xeed Drawings</h2>
+    <!-- ======= EURO Planetary Drawings ======= -->
+    <section id="euro-planetary" class="drawing py-4">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>EURO Planetary Drawings</h2>
+        </div>
+        <div class="list-group">
+          <a href="./assets/EURO plenetary GEARBOX DRAWING/1、EG03L2-44.6-HC-AM132-A.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EG03L2-44.6-HC-AM132-A</a>
+          <a href="./assets/EURO plenetary GEARBOX DRAWING/2、EG07L2-46.7-HC-AM160-A.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EG07L2-46.7-HC-AM132-A</a>
+          <a href="./assets/EURO plenetary GEARBOX DRAWING/3、EG07L3-60.5-HC-AM160-A.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EG07L3-60.5-HC-AM160-A</a>
+          <a href="./assets/EURO plenetary GEARBOX DRAWING/4、EGT07L3-73.9-HC-AM180-A.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EGT07L3-73.9-HC-AM180-A</a>
+          <a href="./assets/EURO plenetary GEARBOX DRAWING/5、EGT07L3-62.6-HC-AM180-A.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EGT07L3-62.6-HC-AM180-A</a>
+          <a href="./assets/EURO plenetary GEARBOX DRAWING/6、EGT09L3-73.9-HC-AM200-A.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EGT09L3-73.9-HC-AM200-A</a>
+          <a href="./assets/EURO plenetary GEARBOX DRAWING/7、EG05L3-63.1-HC-AM132-A.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EG05L3-63.1-HC-AM132-A</a>
+          <a href="./assets/EURO plenetary GEARBOX DRAWING/8、EG03L3-53.4-HC-AM112-A.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EG03L3-53.4-HC-AM112-A</a>
+          <a href="./assets/EURO plenetary GEARBOX DRAWING/EG710 TSF R 60.5 P160.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EG0710 TSF R 60.5 P160-A</a>
+        </div>
       </div>
-    <div class="list-group">
-      <a href="./assets/xingda xeed/EG01B02-P80B5.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EG01B02-P80B5.pdf</a> 
-      <a href="./assets/xingda xeed/EG02B02-P71B5.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EG02B02-P71B5.pdf</a> 
-      <a href="./assets/xingda xeed/EG02B02-P80B5.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EG02B02-P80B5.pdf</a> 
-      <a href="./assets/xingda xeed/EG02B02-P90B5.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EG02B02-P90B5.pdf</a>
-      <a href="./assets/xingda xeed/EG03M04-P100B5.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EG03M04-P100B5.pdf</a>
-      <a href="./assets/xingda xeed/EG03M04-P90B5.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EG03M04-P90B5.pdf</a>
-      <a href="./assets/xingda xeed/EG03M04-P80B5.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EG03M04-P80B5.pdf</a>
-      <a href="./assets/xingda xeed/EG04M04-P100B5.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EG04M04-P100B5.pdf</a>
-      <a href="./assets/xingda xeed/EG04M04-P90B5.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EG04M04-P90B5.pdf</a>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <!-- =======  F-K Series Drawings======= -->
 
-<!-- =======  Inline Helical Drawings ======= -->
-  
-<section id="inline-helical" class="drawing py-4">
-    <div class="container" data-aos="fade-up">
-      <div class="section-title">
-        <h2>Inline Helical Drawings</h2>
+    <section id="fk-series" class="drawing py-4">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>F-K Series Drawings</h2>
+        </div>
+        <div class="list-group">
+          <a href="./assets/f k series/EGCI -2016WXRJ0710.pdf" class="list-group-item list-group-item-action"
+            target="_blank">📄 EGCI -2016WXRJ0710.pdf</a>
+          <a href="./assets/f k series/EGFAF47-AM80-42.86-M1.pdf" class="list-group-item list-group-item-action"
+            target="_blank">📄 EGFAF47-AM80-42.86-M1.pdf</a>
+          <a href="./assets/f k series/EGFAF57-AM100-21.17-M1_2D-Drawing.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EGFAF57-AM100-21.17-M1_2D-Drawing.pdf</a>
+          <a href="./assets/f k series/EGFF77-AM90-142.27-M1_Order Form.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EGFF77-AM90-142.27-M1_Order
+            FormD-Drawing.pdf</a>
+          <a href="./assets/f k series/EGFF87-AM100-197.2-M1_Order Form.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EGFF87-AM100-197.2-M1_Order Form.pdf</a>
+          <a href="./assets/f k series/EGKF127-AD7-31.41-M6-B_2D-Drawing.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EGKF127-AD7-31.41-M6-B_2D-Drawing.pdf</a>
+          <a href="./assets/f k series/EGKA47WR37-552-φ30-71B5(WMJ25031901).pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄
+            EGKA47WR37-552-φ30-71B5(WMJ25031901).pdf</a>
+          <a href="./assets/f k series/EGKAB107WR77-AM100-286-M1_2D-Drawing.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄
+            EGKAB107WR77-AM100-286-M1_2D-Drawing.pdf</a>
+          <a href="./assets/f k series/EGKFS107-31.28-M5(WMJ24100801).pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EGKFS107-31.28-M5(WMJ24100801).pdf</a>
+          <a href="./assets/f k series/EGKFS127-31.41-SRφ60(法兰A面，输出轴B面，使用短轴)(WMJ25030402).pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄
+            EGKFS127-31.41-SRφ60(法兰A面，输出轴B面，使用短轴)(WMJ25030402).pdf</a>
+          <a href="./assets/f k series/EGKAB37-AM100-13.08-M1_Order Form.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄 EGKAB37-AM100-13.08-M1_Order Form.pdf</a>
+          <a href="./assets/f k series/EGKAB47WR37-552-71B5.pdf" class="list-group-item list-group-item-action"
+            target="_blank">📄 EGAB47WR37-552-71B5.pdf</a>
+          <a href="./assets/f k series/EGKAT107-AM132ML-121.46-M1-A_2D-Drawing.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄
+            EGKAT107-AM132ML-121.46-M1-A_2D-Drawing.pdf</a>
+          <a href="./assets/f k series/EGKAB127-82.11-132B5 1.dwg" class="list-group-item list-group-item-action"
+            target="_blank">📄 EGKAB127-82.11-132B5 1.pdf</a>
+          <a href="./assets/f k series/EGKFS107-31.28-M5(WMJ24100801).dwg"
+            class="list-group-item list-group-item-action" target="_blank">📄 EGKFS107-31.28-M5(WMJ24100801).pdf</a>
+          <a href="./assets/f k series/EGFAF57-100B5.dwg" class="list-group-item list-group-item-action"
+            target="_blank">📄 EGFAF57-100B5.dwg</a>
+          <a href="./assets/f k series/EGKAB127-AM132ML-82.11-M1_3D-CAD.step"
+            class="list-group-item list-group-item-action" target="_blank">📄 EGKAB127-AM132ML-82.11-M1_3D-CAD.step</a>
+
+        </div>
       </div>
-    <div class="list-group">
-      <a href="./assets/Inline-helical/EGKA77-132B5.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGKA77-132B5.pdf</a>
-      <a href="./assets/Inline-helical/EGKA87-12.56-φ50-160B5.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGKA87-12.56-φ50-160B5.pdf</a>
-      <a href="./assets/Inline-helical/EGRF77-AM112-15.6-M1-Φ300_2D-Drawing.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGRF77-AM112-15.6-M1-Φ300_2D-Drawing.pdf</a>
-      <a href="./assets/Inline-helical/EGRF87-AM100-47.58-M1-Φ350_2D-Drawing.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGRF87-AM100-47.58-M1-Φ350_2D-Drawing.pdf</a>
-      <a href="./assets/Inline-helical/EGRF87-AM132-15.35-M1-Φ350_2D-Drawing.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGRF87-AM132-15.35-M1-Φ350_2D-Drawing.pdf</a>
-      <a href="./assets/Inline-helical/EGRF97-AM112-47.58-M1-Φ450_2D-Drawing.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGRF97-AM112-47.58-M1-Φ450_2D-Drawing.pdf</a>
-      <a href="./assets/Inline-helical/EGRF97-AM132-32.05-M1-Φ450_2D-Drawing.pdf" class="list-group-item list-group-item-action"target="_blank">📄 EGRF97-AM132-32.05-M1-Φ450_2D-Drawing.pdf</a>
-    
-    </div>
-  </div>
-</section>
+    </section>
+    <!-- =======  Xingda Xeed Drawings======= -->
+
+    <section id="xingda-xeed" class="drawing py-4">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Xingda Xeed Drawings</h2>
+        </div>
+        <div class="list-group">
+          <a href="./assets/xingda xeed/EG01B02-P80B5.pdf" class="list-group-item list-group-item-action"
+            target="_blank">📄 EG01B02-P80B5.pdf</a>
+          <a href="./assets/xingda xeed/EG02B02-P71B5.pdf" class="list-group-item list-group-item-action"
+            target="_blank">📄 EG02B02-P71B5.pdf</a>
+          <a href="./assets/xingda xeed/EG02B02-P80B5.pdf" class="list-group-item list-group-item-action"
+            target="_blank">📄 EG02B02-P80B5.pdf</a>
+          <a href="./assets/xingda xeed/EG02B02-P90B5.pdf" class="list-group-item list-group-item-action"
+            target="_blank">📄 EG02B02-P90B5.pdf</a>
+          <a href="./assets/xingda xeed/EG03M04-P100B5.pdf" class="list-group-item list-group-item-action"
+            target="_blank">📄 EG03M04-P100B5.pdf</a>
+          <a href="./assets/xingda xeed/EG03M04-P90B5.pdf" class="list-group-item list-group-item-action"
+            target="_blank">📄 EG03M04-P90B5.pdf</a>
+          <a href="./assets/xingda xeed/EG03M04-P80B5.pdf" class="list-group-item list-group-item-action"
+            target="_blank">📄 EG03M04-P80B5.pdf</a>
+          <a href="./assets/xingda xeed/EG04M04-P100B5.pdf" class="list-group-item list-group-item-action"
+            target="_blank">📄 EG04M04-P100B5.pdf</a>
+          <a href="./assets/xingda xeed/EG04M04-P90B5.pdf" class="list-group-item list-group-item-action"
+            target="_blank">📄 EG04M04-P90B5.pdf</a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======  Inline Helical Drawings ======= -->
+
+    <section id="inline-helical" class="drawing py-4">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Inline Helical Drawings</h2>
+        </div>
+        <div class="list-group">
+          <a href="./assets/Inline-helical/EGKA77-132B5.pdf" class="list-group-item list-group-item-action"
+            target="_blank">📄 EGKA77-132B5.pdf</a>
+          <a href="./assets/Inline-helical/EGKA87-12.56-φ50-160B5.pdf" class="list-group-item list-group-item-action"
+            target="_blank">📄 EGKA87-12.56-φ50-160B5.pdf</a>
+          <a href="./assets/Inline-helical/EGRF77-AM112-15.6-M1-Φ300_2D-Drawing.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄
+            EGRF77-AM112-15.6-M1-Φ300_2D-Drawing.pdf</a>
+          <a href="./assets/Inline-helical/EGRF87-AM100-47.58-M1-Φ350_2D-Drawing.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄
+            EGRF87-AM100-47.58-M1-Φ350_2D-Drawing.pdf</a>
+          <a href="./assets/Inline-helical/EGRF87-AM132-15.35-M1-Φ350_2D-Drawing.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄
+            EGRF87-AM132-15.35-M1-Φ350_2D-Drawing.pdf</a>
+          <a href="./assets/Inline-helical/EGRF97-AM112-47.58-M1-Φ450_2D-Drawing.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄
+            EGRF97-AM112-47.58-M1-Φ450_2D-Drawing.pdf</a>
+          <a href="./assets/Inline-helical/EGRF97-AM132-32.05-M1-Φ450_2D-Drawing.pdf"
+            class="list-group-item list-group-item-action" target="_blank">📄
+            EGRF97-AM132-32.05-M1-Φ450_2D-Drawing.pdf</a>
+
+        </div>
+      </div>
+    </section>
 
 
 
@@ -411,13 +481,13 @@
 
 
 
- 
-
-   
 
 
 
-  
+
+
+
+
 
 
 
@@ -450,22 +520,24 @@
             <h4>UNITED TRANSMISSION<span>.</span></h4>
             <p>
               <strong>Head Office</strong><br>
-              Plot No. 92/1, 1Km ahead of Pappaji Farm, 4.5km from 
-              Janta crossroad, Mogri-Vanskhilia Road, Gana, <br>Anand-388345 
+              Plot No. 92/1, 1Km ahead of Pappaji Farm, 4.5km from
+              Janta crossroad, Mogri-Vanskhilia Road, Gana, <br>Anand-388345
             </p>
             <p>
               <!-- 1, Naxatra, Jain Society,<br> Bhalej Road, ANAND-388001.<br><br> -->
               <strong>Phone:</strong> (02692) 231061, 231775<br>
               <strong>Mobile:</strong> +91-9825325367<br>
-              <strong>Email:</strong> <a href="mailto:info@euro-gears.net">info@euro-gears.net</a> , <br> <a href="mailto:ho@euro-gears.net">ho@euro-gears.net</a><br>
+              <strong>Email:</strong> <a href="mailto:info@euro-gears.net">info@euro-gears.net</a> , <br> <a
+                href="mailto:ho@euro-gears.net">ho@euro-gears.net</a><br>
             </p>
-          
-           
+
+
           </div>
           <div class="col-lg-3 col-md-6 footer-contact">
             <p>
               <strong>MARKETING OFFICE</strong><br>
-              Shed No 68, Part II,Parishikhar Cottage Industrial Estate, Near Ramol Toll Plaza, Ring Road, Vastral Ramol- <br> Ahmedabad- 382449.
+              Shed No 68, Part II,Parishikhar Cottage Industrial Estate, Near Ramol Toll Plaza, Ring Road, Vastral
+              Ramol- <br> Ahmedabad- 382449.
               <br>
               <strong>Mobile:</strong> +91-9375978115<br>
             </p>
@@ -484,7 +556,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="aboutus.html">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="products.html">Products</a></li>
-              
+
             </ul>
           </div>
 
