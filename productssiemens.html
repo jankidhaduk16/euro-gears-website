@@ -2,6 +2,22 @@
 <html lang="en">
 
 <head>
+  <style>
+  .dropdown-menu {
+  position: absolute; /* Ensures it can layer above other elements */
+  z-index: 2000;       /* Higher than the clients section */
+}
+
+.clients.section-bg {
+  overflow: visible;
+}
+
+/* Also make sure the dropdown container has proper positioning */
+  .dropdown {
+    position: relative;
+  }
+  </style>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -88,7 +104,7 @@
         <div class="row">
           <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
            <img src="assets/img/portfolio/siemens/1.JPG" class="img-thumbnail" />
-<h5 class="text-center">SIEMENS FOOT MOUNTED E2</h5>
+              <h5 class="text-center">SIEMENS FOOT MOUNTED E2</h5>
          
           </div>
           <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
@@ -112,6 +128,34 @@
         
         
         </div> -->
+<div class="dropdown text-center mt-5">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="siemensDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Download Siemens / INNOMOTICS Motor Catalogue
+  </button>
+
+  <div class="dropdown-menu" aria-labelledby="siemensDropdown">
+    <a class="dropdown-item" href="assets/img/portfolio/siemens/siemens catalogue pdf file/1LE7 IE2_Crane Duty Brochure_0825.pdf" target="_blank">
+      1LE7 IE2 Crane Duty Brochure
+    </a>
+    <a class="dropdown-item" href="assets/img/portfolio/siemens/siemens catalogue pdf file/1LA7-General-Purpose.pdf" target="_blank">
+      1LE7 Aluminum housing
+    </a>
+    <a class="dropdown-item" href="assets/img/portfolio/siemens/siemens catalogue pdf file/1PC8-Premium-Efficiency.pdf" target="_blank">
+      IE4_1LE7 Moves motor brochure
+    </a>
+    <a class="dropdown-item" href="assets/img/portfolio/siemens/siemens catalogue pdf file/1PC8-Premium-Efficiency.pdf" target="_blank">
+      Innomotics LVM PM IE6
+    </a>
+    <a class="dropdown-item" href="assets/img/portfolio/siemens/siemens catalogue pdf file/1PC8-Premium-Efficiency.pdf" target="_blank">
+      Innomotics-Brochure-PM_IE5
+    </a>
+    <a class="dropdown-item" href="assets/img/portfolio/siemens/siemens catalogue pdf file/1PC8-Premium-Efficiency.pdf" target="_blank">
+      IE4+IE3-1LE7 Moves motor brochure
+    </a>
+
+    <!-- Add more items as needed -->
+  </div>
+</div>
 
 
       </div>
