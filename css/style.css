@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5,
   color: rgba(0, 0, 0, 0.5); }
 
 .hover-bg-enlarge {
-  overflow: hidden;
+  overflow: visible;
   position: relative; }
   @media (max-width: 991.98px) {
     .hover-bg-enlarge {
@@ -1335,7 +1335,7 @@ h1, h2, h3, h4, h5,
 
 .listing-item {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 4px; }
   .listing-item:after {
     position: absolute;
@@ -1808,6 +1808,8 @@ margin-bottom: 0;
 img{
   max-width: 100%;
 }
+
+
 
 
 
