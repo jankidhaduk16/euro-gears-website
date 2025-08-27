@@ -66,6 +66,12 @@
   margin-bottom: 10px;
 }
 
+.typing-tagline {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: left;
+  color:#ff7f50;
+}
   
 
 
@@ -160,11 +166,26 @@
         </div>
       </div>
 
+<!-- Content Column (Tagline + Intro) -->
+    <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+      <div class="content d-flex flex-column justify-content-center p-3 w-100">
+
+
+<!-----------Tagline ----------->
+      <div class="typing-tagline mb-3">
+          <span id="typed"></span>
+      </div>
+
+
       <!-- Content Column -->
-      <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+       <!-- Intro Text -->
+        <p><strong>UNITED TRANSMISSION</strong> started in 2007 as a partnership firm for trading power transmission products. Below is a snapshot of our operations and activities.</p>
+        <p>Our Chief Director, <strong>Mr. Upnish Raval</strong>, brings 30 years of experience in sales and marketing, supported by a B.E. in Mechanical Engineering, a Postgraduate Diploma in Business Administration, and a Postgraduate Diploma in Marketing Management. He has worked with Indian and Italian MNCs in the same field for over 11 years.</p>
+
+      <!--<div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
         <div class="content d-flex flex-column justify-content-center p-3 w-100">
           <p><strong>UNITED TRANSMISSION</strong> started in 2007 as a partnership firm for trading power transmission products. Below is a snapshot of our operations and activities.</p>
-          <p>Our Chief Director, <strong>Mr. Upnish Raval</strong>, brings 30 years of experience in sales and marketing, supported by a B.E. in Mechanical Engineering, a Postgraduate Diploma in Business Administration, and a Postgraduate Diploma in Marketing Management. He has worked with Indian and Italian MNCs in the same field for over 11 years.</p>
+          <p>Our Chief Director, <strong>Mr. Upnish Raval</strong>, brings 30 years of experience in sales and marketing, supported by a B.E. in Mechanical Engineering, a Postgraduate Diploma in Business Administration, and a Postgraduate Diploma in Marketing Management. He has worked with Indian and Italian MNCs in the same field for over 11 years.</p>-->
         </div>
       </div>
     </div>
@@ -404,6 +425,19 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed("#typed", {
+    strings: ["Powering Industry with Precision Since 2007..."],
+    typeSpeed: 50,
+    backSpeed: 25,
+    showCursor: true,
+    cursorChar: "|",
+    loop: false
+  });
+</script>
 
 </body>
 
