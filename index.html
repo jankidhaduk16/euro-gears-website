@@ -192,6 +192,15 @@
       font-size: 2.5rem;
       margin-bottom: 10px;
     }
+
+    #hero h1 span {
+      color: #106eea;
+}
+    
+    #typed-euro-gears {
+      color: #106eea;
+      font-weight: bold;
+}
   </style>
 </head>
 
@@ -239,11 +248,11 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <div class="typed text">
-        <span id="typed-text"></span>
+     <!-----------Tagline ----------->
+      <div class="typed text mb-3">
+          <span id="typed text"></span>
       </div>
-      <h1>Welcome to EURO GEARS</h1>
-      </h1>
+      <h1>Welcome to <span id="typed-euro-gears"></span></h1>
       <h2>EURO GEARS are specialized in production of various reduction gears with the edge of research and development
         in transmission technology.</h2>
 
@@ -819,16 +828,18 @@
   <script src="assets/vendor/aos/aos.js"></script>
 
   <script src="assets/js/main.js"></script>
-  <!-- Typing Effect JS File -->
+ 
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    var typed = new Typed("#typed-text", {
-      strings: ["Welcome to EURO GEARS"],
-      typeSpeed: 50,
-      backSpeed: 25,
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Typed("#typed-euro-gears", {
+      strings: ["EURO GEARS"],
+      typeSpeed: 140,
+      showCursor: false,
       loop: false
     });
-  </script>
+  });
+</script>
 </body>
 
 </html>
