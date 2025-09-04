@@ -201,6 +201,38 @@
       color: #106eea;
       font-weight: bold;
 }
+
+/* CSS */
+.custom-portfolio {
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-portfolio:hover {
+  transform: translateY(-5px);
+  
+}
+
+.custom-img {
+  border-radius: 15px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease; box-shadow 0.3s ease;
+
+}
+
+.custom-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* stronger on hover */
+}
+
+.custom-title {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
   </style>
 </head>
 
@@ -541,34 +573,76 @@
         </div>
 
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+        <!--<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-4 col-md-6 portfolio-item filter-web text-center">
             <a href="productscrompton.html"> <img src="assets/img/portfolio/client-2.png"
                 class="img-fluid img-thumbnail" alt="" /></a>
             <h5 class="text-center">Crompton</h5>
+          </div>-->
+ <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+    <!-------2nd option------->
+         
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web text-center custom-portfolio">
+            <a href="productscrompton.html">
+              <img src="assets/img/portfolio/client-2.png" class="img-fluid custom-img" alt="Crompton" /></a>
+                <h5 class="custom-title">Crompton</h5>
           </div>
+    <!-------End 2nd option------->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app text-center">
+          <!--<div class="col-lg-4 col-md-6 portfolio-item filter-app text-center">
             <a href="productseuro.html"> <img src="assets/img/portfolio/client-3.png" class="img-fluid img-thumbnail"
                 alt=""></a>
             <h5 class="text-center">Euro Gears</h5>
+          </div>-->
+
+    <!-------2nd option------->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web text-center custom-portfolio">
+            <a href="productseuro.html">
+              <img src="assets/img/portfolio/client-3.png" class="img-fluid custom-img" alt="" /></a>
+                <h5 class="custom-title">Euro Gears</h5>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app text-center">
+    <!-------End 2nd option------->
+
+          <!--<div class="col-lg-4 col-md-6 portfolio-item filter-app text-center">
             <a href="productssiemens.html"> <img src="assets/img/portfolio/client-1.png" class="img-fluid img-thumbnail"
                 alt=""></a>
             <h5 class="text-center">Siemens</h5>
+          </div>-->
+
+    <!-------2nd option------->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web text-center custom-portfolio">
+            <a href="productssiemens.html">
+              <img src="assets/img/portfolio/client-1.png" class="img-fluid custom-img" alt="" /></a>
+                <h5 class="custom-title">Siemens</h5>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app text-center">
+    <!-------End 2nd option------->
+
+          <!--<div class="col-lg-4 col-md-6 portfolio-item filter-app text-center">
             <a href="#"> <img src="assets/img/portfolio/product-4.png" class="img-fluid img-thumbnail" alt=""></a>
             <h5 class="text-center">Power Build </h5>
+          </div>-->
+
+    <!-------2nd option------->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web text-center custom-portfolio">
+            <a href="#">
+              <img src="assets/img/portfolio/product-4.png" class="img-fluid custom-img" alt="" /></a>
+                <h5 class="custom-title">Power Build</h5>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app text-center">
+    <!-------End 2nd option------->
+
+         <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app text-center">
             <a href="#"> <img src="assets/img/portfolio/product-5.png" class="img-fluid img-thumbnail" alt=""></a>
             <h5 class="text-center">Flender/Siemens </h5>
+          </div>-->
+
+    <!-------2nd option------->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web text-center custom-portfolio">
+            <a href="#">
+              <img src="assets/img/portfolio/product-5.png" class="img-fluid custom-img" alt="" /></a>
+                <h5 class="custom-title">Flender/Siemens</h5>
           </div>
-
-
-
+    <!-------End 2nd option------->
+</div>
 
 
         </div>
